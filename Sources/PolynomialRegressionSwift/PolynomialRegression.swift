@@ -31,7 +31,7 @@ public class PolynomialRegression {
                                   b: b.asVector,
                                   b_count: b.rows)
         } catch {
-            fatalError("Unable to solve linear system.")
+            return nil
         }
                 
         return coefficients
